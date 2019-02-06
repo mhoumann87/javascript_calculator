@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Javascript Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron:400,500"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calculator</h1>
+    </header>
+    <main>
+      <div class="calc-body">
+        <div class="display">0123456789</div>
+        <div class="keys">
+          <div class="btn func clear">
+            c
+            <span class="sr-text">Clear All</span>
+          </div>
+          <div class="btn clear-display">
+            ce
+            <span class="sr-text">Clear Screen</span>
+          </div>
+          <div class="btn reverse">
+            +/-
+            <span class="sr-text">Toggle posivive/negative</span>
+          </div>
+          <div class="btn func divide" id="divide">
+            <i class="fas fa-divide"></i>
+            <span class="sr-text">Divide</span>
+          </div>
+          <div class="btn btn1" id="1">1</div>
+          <div class="btn btn2" id="2">2</div>
+          <div class="btn btn3" id="3">3</div>
+          <div class="btn func times" id="times">
+            <i class="fas fa-times"></i>
+            <span class="sr-text">Multiply</span>
+          </div>
+          <div class="btn btn4" id="4">4</div>
+          <div class="btn btn5" id="5">5</div>
+          <div class="btn btn6" id="6">6</div>
+          <div class="btn func sub" id="sub">
+            <i class="fas fa-minus"></i>
+            <span class="sr-text">Subtract</span>
+          </div>
+          <div class="btn btn7" id="7">7</div>
+          <div class="btn btn8" id="8">8</div>
+          <div class="btn btn9" id="9">9</div>
+          <div class="btn func add" id="add">
+            <i class="fas fa-plus"></i>
+            <span class="sr-text">Add</span>
+          </div>
+          <div class="btn btn0" id="0">0</div>
+          <div class="btn digit" id="digit">
+            <i class="fas fa-circle"></i>
+            <span class="sr-text">Decimal point</span>
+          </div>
+          <div class="btn func equal" id="equal">
+            <i class="fas fa-equals"></i>
+            <span class="sr-text">Equal</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="copy">
+        &copy;2019 Made by
+        <a href="https://github.com/mhoumann87" target="_blank"
+          >Michael Houmann</a
+        >
+        as part of a web developer course on
+        <a href="https://www.theodinproject.com" target="_blank"
+          >the Odin Project</a
+        >.
+      </div>
+      <div class="social">
+        <a href="https://twitter.com/MichaelHoumann" target="_blank"
+          ><i class="fab fa-twitter"></i
+          ><span class="sr-text">Visit on Twitter</span></a
+        >
+        <a href="https://github.com/mhoumann87" target="_blank"
+          ><i class="fab fa-github"></i>
+          <span class="sr-text">Visit on GitHub</span></a
+        >
+        <a href="www.linkedin.com/in/michael-houmann-3b03654b" target="_blank"
+          ><i class="fab fa-linkedin"></i
+          ><span class="sr-text">Visit on LinkedIn</span></a
+        >
+      </div>
+    </footer>
+    <script src="./calculator.js"></script>
+  </body>
+</html>

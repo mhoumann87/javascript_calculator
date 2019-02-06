@@ -1,0 +1,146 @@
+:root {
+  --body-background: #ecebeb;
+  --font-color: #4d4a4d;
+  --display-background: #9d989d;
+  --buttons: #d5d0d2;
+  --function-buttons: #bd7411;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Orbitron", sans-serif;
+  color: var(--font-color);
+}
+
+body {
+  background-color: var(--body-background);
+}
+
+.sr-text {
+  display: none;
+}
+
+header,
+footer {
+  background-color: var(--font-color);
+  color: var(--body-background);
+}
+
+header {
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+main {
+  min-height: 78.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-body {
+  width: 40%;
+  background-color: var(--font-color);
+  border-radius: 6px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.display {
+  width: 100%;
+  background-color: var(--display-background);
+  font-size: 1.8em;
+  padding: 0.5em;
+  border-radius: 6px;
+  text-align: right;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+.btn {
+  background-color: var(--buttons);
+  font-size: 1.8rem;
+  padding: 0 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn.digit {
+  font-size: 0.5rem;
+}
+
+.btn.func {
+  background-color: var(--function-buttons);
+  color: var(--buttons);
+}
+
+.equal {
+  grid-column: span 2;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1em;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  color: var(--body-background);
+  transition: all 0.3s;
+}
+
+footer .copy a:hover,
+footer .copy a:focus {
+  color: var(--function-buttons);
+}
+
+footer i {
+  font-size: 1.8rem;
+  padding-left: 0.5em;
+  color: var(--body-background);
+  transition: all 0.3s;
+}
+
+.fa-twitter:hover,
+.fa-twitter:focus {
+  color: #00aced;
+}
+
+.fa-github:hover,
+.fa-github:focus {
+  color: #24292e;
+}
+
+.fa-linkedin:hover,
+.fa-linkedin:focus {
+  color: #007bb6;
+}
