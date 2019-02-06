@@ -89,6 +89,14 @@ main {
   font-weight: 500;
   border-radius: 6px;
   cursor: pointer;
+  position: relative;
+  box-shadow: 1px 1px 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  top: 1px;
+  left: 1px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
 }
 
 .btn.digit {
